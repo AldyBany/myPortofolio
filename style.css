@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    /* background-color: #fbf9fb; */
+}
+.container{
+    padding: 1rem 2.5rem;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    display: flex;
+}
+.nav-item{
+    margin-left: 2rem;
+}
+
+.home-content{
+    margin: 9% 20%;
+}
+
+h2{
+    font-size: 3em;
+}
+
+.work{
+    margin: 1.3rem 0 3.5rem;
+    color: #625F63;
+}
+
+.btn{
+    color: #0FA3B1;
+    padding: .7rem 1.4rem;
+    border: 1px solid #0FA3B1;
+    border-radius: .2rem;
+}
+.content{
+    margin: 0 20%;
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    bottom: 1rem;
+    left: inherit;
+}
+
+.social-media::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: .07rem;
+    height: 2.7rem;
+    background-color: #0FA3B1;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.social-media i{
+    margin-bottom: 1.1rem;
+}
+
+.name,.log{
+    color: #0FA3B1;
+}
+
+
+.resume{
+    padding: .4rem .6rem;
+    border: 1px solid #0FA3B1;
+    color: #0FA3B1;
+    border-radius: .2rem;
+}
+
+.text{
+    color: #625F63;
+}
+
+.fullname,.nav-link,.social-media i{
+    color: #3F4045;
+}
+
+.about-content{
+   
+    display: grid;
+    grid-template-columns: 58% 40%;
+    column-gap: 3.2rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.paragraph{
+    margin: 1.5rem 0;
+}
+
+.school a{
+    color: #0FA3B1;
+
+}
+
+.about-img{
+    margin-top: 3.5rem;
+    border: 1px solid;
+    height: 300px;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 350px;
+    /* border: 1px solid; */
+    position: relative;
+    margin-bottom: 6rem;
+    
+}
+.project-img{
+    border: 1px solid;
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-position{
+    text-align: right;
+}
+
+.project-description{
+    background-color: #3F4045;
+    color: #fbf9fb;
+    /* width: 500px; */
+    padding: 1rem 1.2rem;
+    position: relative;
+    right: 0;
+    width: 400px;
+    left: -70px;
+
+    /* left: -60px; */
+}
+
+.project-title{
+    color: #0FA3B1;
+}
+.second{
+    grid-template-columns: 45% 55%;
+}
+
+.project-description-second{
+    background-color: #3F4045;
+    color: #fbf9fb;
+    /* width: 500px; */
+    padding: 1rem 1.2rem;
+    position: relative;
+    right: -70px;
+    width: 400px;
+    left: 0px;
+
+    /* left: -60px; */
+}
+
+.title-text{
+    text-align: center;
+}
+
+.title-link{
+    color: #0FA3B1;
+}
+
+.content-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.project-box{
+    height: 350px;
+    border: 1px solid;
+    padding: 2.5rem ;
+}
+
+.bxs-folder-open{
+    font-size: 2rem;
+}
+.project-resources{
+    margin: 2rem 0 0;
+}
+.resource{
+    font-size: .8rem;
+}
+
+.link-icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.link-icon a{
+    color: #0FA3B1;
+}
+
+.contact{
+    text-align: center;
+    margin: 3rem;
+}
+
+.contact p{
+    width: 400px;
+    margin: .7rem auto 2.2rem;
+}
+
+.contact h3{
+    font-size: 1.8em;
+}
+
+footer{
+    background-color:  #3F4045;
+    text-align: center;
+    padding: 1.3rem 0;
+    color: #fbf9fb
+}
+
+.nav-toggle{
+    font-size: 3rem;
+    color: #3F4045;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .nav-menu{
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        background-color: red;
+        flex-direction: column;
+        padding: 3rem 0;
+        transition: .5s;
+    }
+    .nav-item{
+        margin-bottom: 2rem;
+    }
+    .show{
+        left: 0;
+
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+    
+}
+
+
+@media screen and (max-width: 568px){
+    body{
+        font-size: 12px;
+    }
+    .content{
+        margin: 0 15%;
+        }
+
+    .about-content{
+        grid-template-columns: 1fr;
+    }
+    .project{
+        grid-template-columns: 1fr;
+    }
+    .project-description-second{
+        right: 0;
+        width: 100%;
+    }
+    .project-description{
+        left: 0;
+        width: 100%;
+    }
+    .project-box{
+        height: 280px;
+    }
+}
