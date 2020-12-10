@@ -15,6 +15,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
+    /* margin: 3rem 0 0 0; */
     /* background-color: #fbf9fb; */
 }
 .container{
@@ -25,10 +26,12 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 .nav-menu{
     display: flex;
+    position: relative;
 }
 .nav-item{
     margin-left: 2rem;
@@ -56,6 +59,14 @@ h2{
 .content{
     margin: 0 20%;
 
+}
+
+.close-toggle{
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 .social-media{
@@ -103,7 +114,6 @@ h2{
 }
 
 .about-content{
-   
     display: grid;
     grid-template-columns: 58% 40%;
     column-gap: 3.2rem;
@@ -144,7 +154,22 @@ h2{
     
 }
 .project-img{
-    border: 1px solid;
+    /* border: 1px solid; */
+    background: url(./images/garageth.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -100;
+}
+
+.last{
+    background: url(./images/EcomThmb.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -100;
 }
 
 .project-details{
@@ -248,7 +273,7 @@ footer{
     background-color:  #3F4045;
     text-align: center;
     padding: 1.3rem 0;
-    color: #fbf9fb
+    color: #fbf9fb;
 }
 
 .nav-toggle{
@@ -257,14 +282,21 @@ footer{
     display: none;
 }
 
+.active{
+    color: #0FA3B1;
+}
+
 @media screen and (max-width: 768px){
+    .close-toggle{
+        display: block;
+    }
     .nav-menu{
         position: fixed;
         width: 80%;
         height: 100vh;
         left: -100%;
         top: 0;
-        background-color: red;
+        background-color: #fbf9fb;
         flex-direction: column;
         padding: 3rem 0;
         transition: .5s;
@@ -280,13 +312,21 @@ footer{
     .nav-toggle{
         display: block;
     }
+    .about-img{
+        order: -1;
+
+    }
+    .second .project-img{
+        order: -1;
+    }
     
 }
 
 
+
 @media screen and (max-width: 568px){
     body{
-        font-size: 12px;
+        font-size: 13px;
     }
     .content{
         margin: 0 15%;
@@ -297,7 +337,9 @@ footer{
     }
     .project{
         grid-template-columns: 1fr;
+        margin-bottom: 10rem;
     }
+    
     .project-description-second{
         right: 0;
         width: 100%;
@@ -309,4 +351,9 @@ footer{
     .project-box{
         height: 280px;
     }
+    .project-img{
+        height: 180px;
+    }
+
+    
 }
