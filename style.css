@@ -44,7 +44,7 @@ body{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
     .nav{
         align-items: center;
     }
@@ -279,8 +279,11 @@ h2{
     box-shadow: 0 2px 4px rgba(0,0,0,.1) ;
 }
 
-.project-title{
+.project-title,.project-btn i{
     color: #0FA3B1;
+}
+.project-btn i{
+    font-size: 1.5em;
 }
 .second{
     grid-template-columns: 45% 55%;
@@ -296,6 +299,7 @@ h2{
 
 .title-text{
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .title-link{
