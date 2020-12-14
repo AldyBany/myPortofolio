@@ -231,7 +231,6 @@ h2{
     display: grid;
     grid-template-columns: 55% 45%;
     height: 350px;
-    /* border: 1px solid; */
     position: relative;
     margin-bottom: 6rem;
     
@@ -259,22 +258,25 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
 }
-.text-position{
-    text-align: right;
+
+.project-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    position: relative;
 }
+
 
 .project-description{
     background-color: #3F4045;
     color: #fbf9fb;
-    /* width: 500px; */
     padding: 1rem 1.2rem;
-    position: relative;
-    right: 0;
-    width: 400px;
-    left: -70px;
-
-    /* left: -60px; */
+    width: 420px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1) ;
 }
 
 .project-title{
@@ -287,14 +289,9 @@ h2{
 .project-description-second{
     background-color: #3F4045;
     color: #fbf9fb;
-    /* width: 500px; */
     padding: 1rem 1.2rem;
-    position: relative;
-    right: -70px;
-    width: 400px;
-    left: 0px;
-
-    /* left: -60px; */
+    margin-right: -80px;
+    width: 420px;
 }
 
 .title-text{
@@ -369,7 +366,7 @@ footer{
     color: #0FA3B1;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
     .close-toggle{
         display: block;
     }
@@ -413,7 +410,7 @@ footer{
 
 
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 968px){
     body{
         font-size: 14px;
     }
